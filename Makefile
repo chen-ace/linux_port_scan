@@ -1,5 +1,5 @@
 all:
-	gcc -o src/port_scan src/port_scan.c
+	gcc -o src/port_scan src/port_scan.c -std=c99 -w -lpthread
 install:
 	cp src/port_scan /usr/local/bin/port_scan
 	chmod 777 /usr/local/bin/port_scan
